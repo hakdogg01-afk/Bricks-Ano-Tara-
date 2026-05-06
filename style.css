@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #a02d7a;
+  color: white;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('images/hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.hero h2 {
+  font-size: 50px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  margin-top: 15px;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 100px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 25px;
+}
+
+.product {
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  padding: 15px;
+  transition: 0.4s;
+}
+
+.product:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+button {
+  background: linear-gradient(45deg, #ff00cc, #3333ff);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#main-content {
+  transition: margin-right 0.4s ease;
+}
+
+/* When cart is open */
+body.cart-open #main-content {
+  margin-right: 320px;
+}
+
+.cart {
+  position: fixed;
+  right: -320px;
+  top: 70px;
+  width: 320px;
+  height: calc(100% - 70px);
+  background: #b61378;
+  padding: 20px;
+  transition: 0.4s;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* Slide in */
+body.cart-open .cart {
+  right: 0;
+}
+
+/* CHECKOUT */
+.checkout {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.checkout-box {
+  background: #eb25d4;
+  padding: 25px;
+  width: 320px;
+  margin: 100px auto;
+  border-radius: 12px;
+}
+
+.checkout input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
