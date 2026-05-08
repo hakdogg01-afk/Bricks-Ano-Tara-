@@ -1,11 +1,10 @@
 const products = [
-  { name: "Cinnamoroll Brick", price: 299, img: "images/cinnamoroll.jpg" },
-  { name: "Daisy Duck Brick", price: 349, img: "images/daisyduck.jpg" },
-  { name: "Angel from Lilo and Stitch", price: 399, img: "images/angel.jpg" },
-  { name: "Donald Duck Brick", price: 329, img: "images/donaldduck.jpg" },
-  { name: "Dumbo Brick", price: 329, img: "images/dumbo.jpg" },
-  { name: "Judy Hopps Zootopia Brick", price: 329, img: "images/judy.jpg" },
-  { name: "Stella Lou Brick", price: 329, img: "images/stellalou.jpg" }
+  { name: "Dragonfly Bricks", price: 300, img: "images/dragonfly.jpg" },
+  { name: "Mosquito Bricks", price: 300, img: "images/mosquito.jpg" },
+  { name: "Flower Bouquet Bricks", price: 600, img: "images/fb.jpg" },
+ { name: "Garden Bricks", price: 600, img: "images/garden.jpg" },
+ { name: "Purple Flower Bricks", price : 400, img: "images/purplef.jpg" },
+ { name: "Pink Flower Bricks", price: 400, img: "images/pinkf.jpg" }
 ];
 
 let cart = [];
